@@ -13,8 +13,8 @@ public class CreatorOfNode {
 	private Integer startRightOperand;
 	private Integer positionOpenBracket;
 	private Integer positionCloseBracket;
-    private final static String OPENBRACKET = "(";
-    private final static String CLOSEBRACKET = ")";
+    private final static String OPEN_BRACKET = "(";
+    private final static String CLOSE_BRACKET = ")";
     //private final static char DOT = '.';
 	
 	private static CreatorOfNode instance = new CreatorOfNode();
@@ -39,7 +39,7 @@ public class CreatorOfNode {
 	
 	private TreeExpression analyzedExpression(String expr) throws CompilationException {
 		
-		if(expr.trim().length()>0){
+		if(expr!=null && expr.trim().length()>0){
 			endLeftOperand = null;
 			startRightOperand = null;
             positionOpenBracket = null;
@@ -58,14 +58,14 @@ public class CreatorOfNode {
 			if(position==-1){ // OPERAND (only digit, space or "." in expression)   
 				return new NodeOperand(startExpr, expr);
 			} else {
-                    if(expr.startsWith(OPENBRACKET, position)){
+                    if(expr.startsWith(OPEN_BRACKET, position)){
                         throw new CompilationException(position, "Open bracket without pair!");
                     }
-                    if(expr.startsWith(CLOSEBRACKET, position)){
+                    if(expr.startsWith(CLOSE_BRACKET, position)){
                         if(expr.substring(position).trim().length()==1){ // CORRECT EXPR ( ")" is end symbol)
                             return expressionWithBracket(position, expr);
                         } else { // Right operand is not defined
-                            throw new CompilationException(position, "Operand without operator!");
+                            throw new CompilationException(position+1, "Operand without operator!");
                         }
                     }
 
@@ -89,8 +89,8 @@ public class CreatorOfNode {
 			String new_operator;
 			int in_bracket = 0;
 			while(position>-1){
-				if(expr.startsWith(OPENBRACKET, position)) in_bracket--;
-	    		if(expr.startsWith(CLOSEBRACKET, position)) in_bracket++;
+				if(expr.startsWith(OPEN_BRACKET, position)) in_bracket--;
+	    		if(expr.startsWith(CLOSE_BRACKET, position)) in_bracket++;
 				if(in_bracket==0){
 					if(!(Character.isDigit(expr.charAt(position)))){
 						new_operator = expr.substring(position, position+1);
@@ -127,9 +127,9 @@ public class CreatorOfNode {
 		int inBracket = 1;
 		while (position>-1 && inBracket!=0) {
 			if(!(Character.isDigit(expr.charAt(position)))){
-				if(expr.startsWith(OPENBRACKET, position))
+				if(expr.startsWith(OPEN_BRACKET, position))
 					inBracket--;
-	    		if(expr.startsWith(CLOSEBRACKET, position))
+	    		if(expr.startsWith(CLOSE_BRACKET, position))
 	    			inBracket++;
 			}
     		if(inBracket==0)
@@ -144,9 +144,9 @@ public class CreatorOfNode {
 				while (position>-1) {
                     if(OperatorFactory.getInstance().isOperator(expr.substring(position, position+1)))
                         return expressionWithOperator(position, expr);
-					if(expr.startsWith(OPENBRACKET, position))
+					if(expr.startsWith(OPEN_BRACKET, position))
                         throw new CompilationException(position, "Open bracket without pair!");
-		    		if(expr.startsWith(CLOSEBRACKET, position))
+		    		if(expr.startsWith(CLOSE_BRACKET, position))
                         throw new CompilationException(position+1, "Operator is not defined!");
 		    		position--;
 				}

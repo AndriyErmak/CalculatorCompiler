@@ -9,7 +9,9 @@ package com.github.andriyermak.calculator.operation.function;
  */
 public class SquareFunction extends AbstractFunction implements UnaryFunction {
 
-    public SquareFunction() {}
+    public SquareFunction() throws Exception {
+        super();
+    }
 
     public Double calculate(Double operand) {
         return Math.sqrt(operand);

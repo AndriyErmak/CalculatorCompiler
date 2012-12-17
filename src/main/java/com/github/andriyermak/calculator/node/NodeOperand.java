@@ -15,7 +15,7 @@ public class NodeOperand extends TreeExpression {
     			this.operand = new Double(expression.trim());
 			}
 			catch (NumberFormatException e) { // if "1 2" (blank in operand)
-                throw new CompilationException(startPosition, "Number Format Exception!");
+                throw new CompilationException(startPosition, "Number Format Is Fail!");
 			}
     	}
     }

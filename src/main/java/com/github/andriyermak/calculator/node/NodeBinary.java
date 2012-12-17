@@ -11,7 +11,7 @@ public class NodeBinary extends TreeExpression {
 	private final int startPosition;
     private final int endOperandLeft;
 	
-    public NodeBinary(int startPosition, String expression, Integer endOperandLeft, Integer startOperandRight)
+    public NodeBinary(int startPosition, String expression, int endOperandLeft, int startOperandRight)
             throws CompilationException {
         this.startPosition = startPosition;
         this.endOperandLeft = endOperandLeft;

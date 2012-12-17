@@ -14,7 +14,7 @@ public class NodeUnary extends TreeExpression {
     private final int startPosition;
     private final static String PLUS = "+";
 
-    public NodeUnary(int startPosition, String expression, Integer startRightOperand)
+    public NodeUnary(int startPosition, String expression, int startRightOperand)
             throws CompilationException {
     	this.startPosition = startPosition;
     	String expr = expression.substring(startRightOperand);
@@ -22,11 +22,11 @@ public class NodeUnary extends TreeExpression {
     	this.operator = expression.substring(0, startRightOperand);
     }
     
-    public NodeUnary(int carret, String expression, Integer positionOpenBracket, Integer positionCloseBracket)
+    public NodeUnary(int startPosition, String expression, int positionOpenBracket, int positionCloseBracket)
             throws CompilationException {
-    	startPosition = carret;
+    	this.startPosition = startPosition;
     	String expr = expression.substring(positionOpenBracket+1, positionCloseBracket);
-        this.operand = CreatorOfNode.getInstance().buildNode(startPosition +positionOpenBracket+1, expr);
+        this.operand = CreatorOfNode.getInstance().buildNode(this.startPosition +positionOpenBracket+1, expr);
         this.operator = expression.substring(0, positionOpenBracket).trim().length()>0 ? expression.substring(0, positionOpenBracket) : PLUS;
     }
     

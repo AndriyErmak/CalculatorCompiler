@@ -11,6 +11,10 @@ import java.util.List;
  */
 public class MaxFunction extends AbstractFunction implements MultyFunction {
 
+    public MaxFunction() throws Exception {
+        super();
+    }
+
     public Double calculate(List<Double> operands) {
         Double operand = operands.get(0);
         int length = operands.size();

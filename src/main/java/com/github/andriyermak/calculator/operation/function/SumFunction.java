@@ -11,6 +11,10 @@ import java.util.List;
  */
 public class SumFunction extends AbstractFunction implements MultyFunction {
 
+    public SumFunction() throws Exception {
+        super();
+    }
+
     public Double calculate(List<Double> operands) {
         Double operand = operands.get(0);
         int length = operands.size();

@@ -12,11 +12,11 @@ public class NodeMultiplay extends TreeExpression {
     private List<TreeExpression> operands;
     private final String operator;
     private final int startPosition;
-    private final String OPENBRACKET = "(";
-    private final String CLOSEBRACKET = ")";
+    private final String OPEN_BRACKET = "(";
+    private final String CLOSE_BRACKET = ")";
     private final String COMMA = ",";
 
-    public NodeMultiplay(int startPosition, String expression, Integer positionOpenBracket, Integer positionCloseBracket)
+    public NodeMultiplay(int startPosition, String expression, int positionOpenBracket, int positionCloseBracket)
             throws CompilationException {
 
 	    	this.startPosition = startPosition;
@@ -27,8 +27,8 @@ public class NodeMultiplay extends TreeExpression {
 	    	String expr = "";
 	    	//Add operands to tree
 	    	while(position< positionCloseBracket){
-	    		if(expression.startsWith(OPENBRACKET, position)) inBracket++;
-	    		if(expression.startsWith(CLOSEBRACKET, position)) inBracket--;
+	    		if(expression.startsWith(OPEN_BRACKET, position)) inBracket++;
+	    		if(expression.startsWith(CLOSE_BRACKET, position)) inBracket--;
 	    		if(expression.startsWith(COMMA, position) && inBracket==0){
 	    			expr = expression.substring(startOperand, position);
 	    	        this.operands.add(CreatorOfNode.getInstance().buildNode(this.startPosition +startOperand, expr));
