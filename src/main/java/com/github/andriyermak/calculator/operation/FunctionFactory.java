@@ -13,10 +13,15 @@ public class FunctionFactory {
 	
 	private FunctionFactory(){
 		functions = new HashMap<String, AbstractFunction>();
-		//functions.put("sqrt", new SquareFunction());
-		//functions.put("min", new MinFunction());
-        //functions.put("max", new MaxFunction());
-        //functions.put("sum", new SumFunction());
+        try {
+            functions.put("sqrt", new SquareFunction());
+            functions.put("min", new MinFunction());
+            functions.put("max", new MaxFunction());
+            functions.put("sum", new SumFunction());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 	}
 	
 	public static FunctionFactory getInstance(){

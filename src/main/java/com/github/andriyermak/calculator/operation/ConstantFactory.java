@@ -11,7 +11,7 @@ public class ConstantFactory {
 	
 	private ConstantFactory(){
 		constans = new HashMap<String, Double>();
-		//constans.put("pi", Math.PI);
+		constans.put("pi", Math.PI);
 	}
 	
 	public static ConstantFactory getInstance(){
@@ -19,7 +19,7 @@ public class ConstantFactory {
 	}
 	
 	public Double getConstant(String constant){
-		return constans.get(constant);
+		return constans.get(constant.trim().toLowerCase());
 	}
 	
 	public boolean isConstant(String constant){

@@ -59,20 +59,20 @@ public class CreatorOfNode {
 				return new NodeOperand(startExpr, expr);
 			} else {
                     if(expr.startsWith(OPEN_BRACKET, position)){
-                        throw new CompilationException(position, "Open bracket without pair!");
+                        throw new CompilationException(startExpr+position, "Open bracket without pair!");
                     }
                     if(expr.startsWith(CLOSE_BRACKET, position)){
                         if(expr.substring(position).trim().length()==1){ // CORRECT EXPR ( ")" is end symbol)
                             return expressionWithBracket(position, expr);
                         } else { // Right operand is not defined
-                            throw new CompilationException(position+1, "Operand without operator!");
+                            throw new CompilationException(startExpr+position+1, "Operand without operator!");
                         }
                     }
 
                     if(OperatorFactory.getInstance().isOperator(expr.substring(position, position+1))){
                         return expressionWithOperator(position, expr);
                     }
-                    throw new CompilationException(position, "Character is not valid!");
+                    throw new CompilationException(startExpr+position, "Character is not valid!");
 			}
 		} else {
             throw new CompilationException(startExpr, "Expression is not defined!");
@@ -111,14 +111,14 @@ public class CreatorOfNode {
 				if(OperatorFactory.getInstance().getOperator(operator).isUnary()){ //if unary PLUS or MINUS
                     return new NodeUnary(startExpr, expr, startRightOperand);
                 } else {
-                    throw new CompilationException(positionOperator, "Illegal unary operator!");
+                    throw new CompilationException(startExpr+positionOperator, "Illegal unary operator!");
                 }
 			} else {
 				// Binary expression	
 				return new NodeBinary(startExpr, expr, endLeftOperand, startRightOperand);
 			}
 		} else {
-            throw new CompilationException(positionOperator, "Operator without operand!");
+            throw new CompilationException(startExpr+positionOperator, "Operator without operand!");
 		}
 	}
 	
@@ -145,9 +145,9 @@ public class CreatorOfNode {
                     if(OperatorFactory.getInstance().isOperator(expr.substring(position, position+1)))
                         return expressionWithOperator(position, expr);
 					if(expr.startsWith(OPEN_BRACKET, position))
-                        throw new CompilationException(position, "Open bracket without pair!");
+                        throw new CompilationException(startExpr+position, "Open bracket without pair!");
 		    		if(expr.startsWith(CLOSE_BRACKET, position))
-                        throw new CompilationException(position+1, "Operator is not defined!");
+                        throw new CompilationException(startExpr+position+1, "Operator is not defined!");
 		    		position--;
 				}
 				String nameFuncOrConst = expr.substring(0, positionOpenBracket);
@@ -159,7 +159,7 @@ public class CreatorOfNode {
                         if(FunctionFactory.getInstance().getFunction(nameFuncOrConst).isMulty())
                             return new NodeMultiplay(startExpr, expr, positionOpenBracket, positionCloseBracket);
                      } else {
-                         throw new CompilationException(positionOpenBracket+1, "Argument function is not defined!");
+                         throw new CompilationException(startExpr+positionOpenBracket+1, "Argument function is not defined!");
                      }
 				}
 					 
@@ -167,13 +167,13 @@ public class CreatorOfNode {
 					if(expr.substring(positionOpenBracket+1, positionCloseBracket).trim().length()==0){
                         return new NodeOperand(startExpr, nameFuncOrConst);
                     } else {
-                        throw new CompilationException(positionOpenBracket, "Illegal parameter in constant!");
+                        throw new CompilationException(startExpr+positionOpenBracket, "Illegal parameter in constant!");
                     }
 				}
 
-                throw new CompilationException(positionOpenBracket, "Unknown signature of expression!");
+                throw new CompilationException(startExpr+positionOpenBracket, "Unknown signature of expression!");
 			} else { //Delete open and close bracket in (1+2)
-				return new NodeUnary(startExpr + positionOpenBracket, expr, positionOpenBracket, positionCloseBracket);
+				return new NodeUnary(startExpr+positionOpenBracket, expr, positionOpenBracket, positionCloseBracket);
 			}
 		}
 	}
