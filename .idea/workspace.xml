@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68eb6551-95e2-49bb-b4ef-b3d48cdd1053" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectExpressionWithBracket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectSimpleExpression.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionExpressionWithBracket.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionSignatureExpression.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectConstant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectFunction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionConstant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionDivideByZero.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionFunction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Calculator.iml" afterPath="$PROJECT_DIR$/Calculator.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/CreatorOfNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/CreatorOfNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeBinary.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeBinary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeMultiplay.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeMultiplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeOperand.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeOperand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeUnary.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeUnary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/AbstractFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/AbstractFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/MaxFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/MaxFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/MinFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/MinFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/SquareFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/SquareFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/SumFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/SumFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/OperatorFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/OperatorFactory.java" />
     </list>
     <ignored path="Calculator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,19 +81,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="ExceptionFunction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="22" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="25" column="21" selection-start="839" selection-end="839" vertical-scroll-proportion="0.375">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreatorOfNode.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CreatorOfNode.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/CreatorOfNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="8" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.33207548">
+            <state line="173" column="101" selection-start="7317" selection-end="7349" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,15 +121,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeOperand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/MaxFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/MinFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/SquareFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/SumFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeUnary.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeMultiplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeBinary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/CreatorOfNode.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectFunction.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionWithBracket.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectExpressionWithBracket.java" />
@@ -143,6 +131,12 @@
         <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectSimpleExpression.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionExpressionWithBracket.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionSignatureExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/OperatorFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectConstant.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionConstant.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionDivideByZero.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/CreatorOfNode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionFunction.java" />
       </list>
     </option>
   </component>
@@ -185,6 +179,26 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Calculator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -209,58 +223,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,9 +237,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -291,51 +253,7 @@
       <recent name="com.github.andriyermak" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExceptionSignatureExpression">
-    <configuration default="false" name="CorrectExpressionWithBracket" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Calculator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.github.andriyermak.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.github.andriyermak.calculator.CorrectExpressionWithBracket" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="CorrectSimpleExpression" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="Calculator" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="com.github.andriyermak.calculator" />
-      <option name="MAIN_CLASS_NAME" value="com.github.andriyermak.calculator.CorrectSimpleExpression" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ExceptionFunction">
     <configuration default="false" name="ExceptionSignatureExpression" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Calculator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -402,6 +320,50 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="ExceptionDivideByZero" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Calculator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.github.andriyermak.calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.github.andriyermak.calculator.ExceptionDivideByZero" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ExceptionFunction" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="Calculator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="com.github.andriyermak.calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.github.andriyermak.calculator.ExceptionFunction" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -451,6 +413,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -476,24 +456,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -589,11 +551,11 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Calculator" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CorrectExpressionWithBracket" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CorrectSimpleExpression" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ExceptionSignatureExpression" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ExceptionExpressionWithBracket" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CorrectFunction" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ExceptionSignatureExpression" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ExceptionExpressionWithBracket" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CorrectFunction" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ExceptionDivideByZero" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ExceptionFunction" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -638,7 +600,11 @@
       <created>1355427810053</created>
       <updated>1355427810053</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lesson 1. Step 3.">
+      <created>1355763530677</created>
+      <updated>1355763530677</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -673,12 +639,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47773972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47773972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24923077" sideWeight="0.32534248" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24820513" sideWeight="0.52226025" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24820513" sideWeight="0.52226025" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42465752" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991803" sideWeight="0.8085868" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -725,7 +691,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 1. Step 3." />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 1. Step 4." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -741,6 +707,8 @@
     <MESSAGE value="Lesson 1. Step 1." />
     <MESSAGE value="Lesson 1. Step 2." />
     <MESSAGE value="Lesson 1. Step 3." />
+    <MESSAGE value="Lesson 1. Step 8." />
+    <MESSAGE value="Lesson 1. Step 4." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -750,103 +718,117 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/CalculatorJFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectExpressionWithBracket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="624" selection-end="624" vertical-scroll-proportion="-1.3275862" />
+        <state line="78" column="16" selection-start="3067" selection-end="3067" vertical-scroll-proportion="0.56237626" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeUnary.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/AbstractFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="87" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.578" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeOperand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="63" selection-start="717" selection-end="739" vertical-scroll-proportion="0.5084112" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeMultiplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="91" selection-start="690" selection-end="690" vertical-scroll-proportion="0.3256705" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeBinary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="83" selection-start="572" selection-end="572" vertical-scroll-proportion="0.35823753" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/CalculatorCommandLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="57" selection-start="1100" selection-end="1233" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectSimpleExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="324" selection-end="324" vertical-scroll-proportion="-1.9133065">
-          <folding />
-        </state>
+        <state line="23" column="127" selection-start="779" selection-end="779" vertical-scroll-proportion="0.19354838" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="74" selection-start="1660" selection-end="1660" vertical-scroll-proportion="1.5279503">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectExpressionWithBracket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="16" selection-start="3067" selection-end="3067" vertical-scroll-proportion="0.56237626">
+        <state line="19" column="6" selection-start="287" selection-end="588" vertical-scroll-proportion="0.5862069">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionExpressionWithBracket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="22" selection-start="1292" selection-end="1292" vertical-scroll-proportion="1.0145985">
+        <state line="37" column="67" selection-start="1325" selection-end="1482" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionSignatureExpression.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/CorrectConstant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="0" selection-start="9800" selection-end="9800" vertical-scroll-proportion="5.529197">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/function/AbstractFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="127" selection-start="779" selection-end="779" vertical-scroll-proportion="0.19354838">
-          <folding />
+        <state line="16" column="26" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+        <state line="18" column="22" selection-start="702" selection-end="702" vertical-scroll-proportion="0.21875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="52" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="8" selection-start="1417" selection-end="2472" vertical-scroll-proportion="0.7816092">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeOperand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="204" selection-end="204" vertical-scroll-proportion="0.1271028">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/operator/Divide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="226" selection-end="226" vertical-scroll-proportion="0.29310346">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/node/NodeBinary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="260" selection-end="260" vertical-scroll-proportion="0.1302682">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/operation/OperatorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="8" selection-start="551" selection-end="551" vertical-scroll-proportion="0.1532567">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionDivideByZero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="59" selection-start="1317" selection-end="1317" vertical-scroll-proportion="1.2524272">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionSignatureExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="44" selection-start="6856" selection-end="6879" vertical-scroll-proportion="0.6875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/andriyermak/calculator/CreatorOfNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="8" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.33207548">
+        <state line="173" column="101" selection-start="7317" selection-end="7349" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/andriyermak/calculator/ExceptionFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="21" selection-start="839" selection-end="839" vertical-scroll-proportion="0.375">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

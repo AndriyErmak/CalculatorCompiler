@@ -15,7 +15,7 @@ public class CreatorOfNode {
 	private Integer positionCloseBracket;
     private final static String OPEN_BRACKET = "(";
     private final static String CLOSE_BRACKET = ")";
-    //private final static char DOT = '.';
+    private final static char DOT = '.';
 	
 	private static CreatorOfNode instance = new CreatorOfNode();
 	
@@ -50,8 +50,8 @@ public class CreatorOfNode {
 			
 			while (position>-1 && 
 					(Character.isDigit(expr.charAt(position)) ||
-					 Character.isWhitespace(expr.charAt(position)) /*||
-					 expr.charAt(position)==DOT*/)) {
+					 Character.isWhitespace(expr.charAt(position)) ||
+					 expr.charAt(position)==DOT)) {
 				position--;
 			}
 			
@@ -159,7 +159,7 @@ public class CreatorOfNode {
                         if(FunctionFactory.getInstance().getFunction(nameFuncOrConst).isMulty())
                             return new NodeMultiplay(startExpr, expr, positionOpenBracket, positionCloseBracket);
                      } else {
-                         throw new CompilationException(positionOpenBracket, "Function argument is not defined!");
+                         throw new CompilationException(positionOpenBracket+1, "Argument function is not defined!");
                      }
 				}
 					 
@@ -167,7 +167,7 @@ public class CreatorOfNode {
 					if(expr.substring(positionOpenBracket+1, positionCloseBracket).trim().length()==0){
                         return new NodeOperand(startExpr, nameFuncOrConst);
                     } else {
-                        throw new CompilationException(positionOpenBracket, "Illegal argument in constant!");
+                        throw new CompilationException(positionOpenBracket, "Illegal parameter in constant!");
                     }
 				}
 

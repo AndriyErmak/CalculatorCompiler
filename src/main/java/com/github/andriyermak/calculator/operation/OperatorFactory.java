@@ -13,9 +13,9 @@ public class OperatorFactory {
 		operators = new HashMap<String, AbstractOperator>();
 		operators.put("+", new Plus(1));
 		operators.put("-", new Minus(1));
-		//operators.put("*", new Multiply(2));
-		//operators.put("/", new Divide(2));
-		//operators.put("^", new Pow(3));
+		operators.put("*", new Multiply(2));
+		operators.put("/", new Divide(2));
+		operators.put("^", new Pow(3));
 	}
 	
 	public static OperatorFactory getInstance(){
